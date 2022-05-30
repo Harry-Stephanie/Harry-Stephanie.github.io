@@ -7,11 +7,15 @@
   
   <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="python数据处理笔记一、DataFrame相关函数 dataframe - 聚合处理函数 1df.groupby([&quot;型号&quot;,&quot;起始日期&quot;]).agg(&amp;#123;&amp;#x27;销量&amp;#x27;: &amp;#x27;sum&amp;#x27;, &amp;#x27;价格&amp;#x27;: &amp;#x27;mean&amp;#x27;&amp;#125;)    dataframe - 缺失与空值处理函">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/index.html">
+<meta property="og:url" content="http://example.com/2022/05/30/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%AC%94%E8%AE%B0/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="python数据处理笔记一、DataFrame相关函数 dataframe - 聚合处理函数 1df.groupby([&quot;型号&quot;,&quot;起始日期&quot;]).agg(&amp;#123;&amp;#x27;销量&amp;#x27;: &amp;#x27;sum&amp;#x27;, &amp;#x27;价格&amp;#x27;: &amp;#x27;mean&amp;#x27;&amp;#125;)    dataframe - 缺失与空值处理函">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2022-05-30T04:39:58.099Z">
+<meta property="article:modified_time" content="2022-03-23T09:54:49.586Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
   
@@ -62,9 +66,7 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-    <article id="post-python数据处理笔记" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-python数据处理笔记" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2022/05/30/python%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86%E7%AC%94%E8%AE%B0/" class="article-date">
   <time datetime="2022-05-30T04:39:58.099Z" itemprop="datePublished">2022-05-30</time>
@@ -191,223 +193,19 @@
     </footer>
   </div>
   
-</article>
-
-
+    
+<nav id="article-nav">
   
-    <article id="post-python环境" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/05/30/python%E7%8E%AF%E5%A2%83/" class="article-date">
-  <time datetime="2022-05-30T04:39:58.059Z" itemprop="datePublished">2022-05-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>镜像问题</p>
-<hr>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 主要镜像</span></span><br><span class="line">https://pypi.douban.com/simple</span><br></pre></td></tr></table></figure>
+  
+    <a href="/2022/05/30/python%E7%8E%AF%E5%A2%83/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title"></div>
+    </a>
+  
+</nav>
 
-
-
-<p>环境配置文件</p>
-<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># environment yaml文件形式</span></span><br><span class="line"></span><br><span class="line"><span class="attr">name:</span> <span class="string">env</span></span><br><span class="line"><span class="attr">channels:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">pytorch</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">conda-forge</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">anaconda</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">defaults</span></span><br><span class="line"><span class="attr">dependencies:</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">_libgcc_mutex=0.1=main</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">_py-xgboost-mutex=2.0=cpu_0</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">asn1crypto=1.2.0=py37_0</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">attrs=19.3.0=py_0</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">blas=1.0=mkl</span></span><br><span class="line">  <span class="bullet">-</span> <span class="string">bokeh=1.3.4=py37_0</span></span><br><span class="line"> <span class="bullet">-</span> <span class="attr">pip:</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">absl-py==0.9.0</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">appdirs==1.4.3</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">cachetools==4.0.0</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">daemonize==2.5.0</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">filelock==3.0.12</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">google-auth==1.11.0</span></span><br><span class="line">    <span class="bullet">-</span> <span class="string">google-auth-oauthlib==0.4.1</span></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/05/30/python%E7%8E%AF%E5%A2%83/" data-id="cl3s8s7160001vcsq91wd4d0s" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
   
 </article>
-
-
-  
-    <article id="post-MySQL数据处理" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/05/30/MySQL%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" class="article-date">
-  <time datetime="2022-05-30T04:39:58.012Z" itemprop="datePublished">2022-05-30</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>一、常见Mysql数据处理问题</p>
-<p>1） 如何实现两表间的同步更新？</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line">CREATE TRIGGER 触发器名称 </span><br><span class="line">ON A表 </span><br><span class="line">AFTER INSERT </span><br><span class="line">AS BEGIN INSERT INTO </span><br><span class="line">B表(B表字段1,B表字段2,B表字段3) </span><br><span class="line">SELECT A表字段1,A表字段2,A表字段3 </span><br><span class="line">FROM INSERTED </span><br><span class="line">END</span><br><span class="line"></span><br><span class="line">-- 条件判断后调用触发器</span><br><span class="line">DROP TRIGGER IF EXISTS `ins_info`; </span><br><span class="line">create trigger ins_info </span><br><span class="line">after insert on nhfxelect for each row </span><br><span class="line">begin </span><br><span class="line"> if HOUR(new.RecordTime)=&#x27;20&#x27; then </span><br><span class="line"> insert into nhfxbyhour (UnitDepName, UnitDepCode, ElectCost, TimeJG, RecordTime) </span><br><span class="line"> values( &#x27;数统学院&#x27;, &#x27;1&#x27;, new.USERKWH, &#x27;20&#x27;, new.RecordTime); </span><br><span class="line"> end if; </span><br><span class="line">end; </span><br><span class="line"></span><br><span class="line">-- 1. 触发器实战</span><br><span class="line">DROP TRIGGER IF EXISTS stu_score;</span><br><span class="line"></span><br><span class="line">create trigger stu_score</span><br><span class="line">after insert on test_student for each row </span><br><span class="line">begin</span><br><span class="line">   if right(new.s_id,1)=&#x27;2&#x27; then</span><br><span class="line">   insert into test_student_score (s_id, c_id, score) </span><br><span class="line">   values(new.s_id,&#x27;01&#x27;, 100); </span><br><span class="line">end if;</span><br><span class="line">end; </span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>2）更新数据库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">UPDATE table_name SET field1=new-value1, field2=new-value2</span><br><span class="line"></span><br><span class="line">UPDATE calendar cal, customer cust </span><br><span class="line">SET cal.Customer = cust.ID</span><br><span class="line">where cal.SeatingID = cust.SeatingID </span><br><span class="line"></span><br><span class="line"># 更新实战1，更新一个字段</span><br><span class="line">UPDATE content_delivery_offsite_base base , content_delivery_offsite_lm_match lm_match</span><br><span class="line">set base.content_lm_standard = lm_match.content_lm_standard </span><br><span class="line">where base.content_lm = lm_match.content_lm</span><br><span class="line"></span><br><span class="line"># 更新实战2，更新多个字段</span><br><span class="line">UPDATE content_delivery_offsite_detail_douyin douyin , content_delivery_offsite_base base</span><br><span class="line">set douyin.content_manager = base.content_manager,douyin.content_delivery_cost = base.content_delivery_cost </span><br><span class="line">where douyin.content_id = base.content_id</span><br><span class="line"></span><br><span class="line"># 更新实战3，更新字段，该字段从其它表vlookup而来</span><br><span class="line">update midea.product_delist_test_process_base_type_chart base_type_chart</span><br><span class="line">set base_type_chart.`产品品类` = (select content_lm_standard from midea.product_delist_match_category category</span><br><span class="line">where category.content_lm = base_type_chart.`营销大类名称`);</span><br></pre></td></tr></table></figure>
-
-
-
-<p>3）修改数据库</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"># 删除数据库中的重复项</span><br><span class="line"># 删除重复项有多种方法，这里见链接：https://kalacloud.com/blog/mysql-remove-duplicate-records/</span><br><span class="line">DELETE FROM users</span><br><span class="line">WHERE id IN (</span><br><span class="line">    SELECT id</span><br><span class="line">    FROM (</span><br><span class="line">        SELECT </span><br><span class="line">            id, ROW_NUMBER () Over (PARTITION BY last_name,email ORDER BY id) as r </span><br><span class="line">        from users</span><br><span class="line">    ) t</span><br><span class="line">    WHERE r &gt; 1</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"># 有问题，将part_dt=&#x27;2021-12&#x27;的重复项和非重复的都给删除了</span><br><span class="line">delete from midea.product_delist_test_original_bom_cost_detail </span><br><span class="line">-- where part_dt = &#x27;2021-12&#x27;</span><br><span class="line">where 序列键标识 in (</span><br><span class="line">    select 序列键标识</span><br><span class="line">    from (</span><br><span class="line">         select 序列键标识,row_number() over(partition by 序列键标识,part_dt order by part_dt) as r</span><br><span class="line">         from midea.product_delist_test_original_bom_cost_detail </span><br><span class="line">    ) t</span><br><span class="line">    where r&gt;1</span><br><span class="line">and part_dt = &#x27;2021-12&#x27;</span><br><span class="line">);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-
-
-<p>3） python操控mysql</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> mysql.connector</span><br><span class="line"></span><br><span class="line">mydb = mysql.connector.connect(</span><br><span class="line">  host=<span class="string">&quot;localhost&quot;</span>,</span><br><span class="line">  user=<span class="string">&quot;你的用户名&quot;</span>,</span><br><span class="line">  passwd=<span class="string">&quot;你的密码&quot;</span>,</span><br><span class="line">  database=<span class="string">&quot;mydatabase&quot;</span></span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">mycursor = mydb.cursor()</span><br><span class="line"></span><br><span class="line">sql = <span class="string">&quot;UPDATE customers SET address = %s WHERE address = %s&quot;</span></span><br><span class="line">val = (<span class="string">&quot;Valley 345&quot;</span>, <span class="string">&quot;Canyon 123&quot;</span>)</span><br><span class="line"></span><br><span class="line">mycursor.execute(sql, val)</span><br><span class="line"></span><br><span class="line">mydb.commit()</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(mycursor.rowcount, <span class="string">&quot;×条记录已更新&quot;</span>)</span><br></pre></td></tr></table></figure>
-
-<p>4）常见函数总结</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"># 剔除文本中的换行符、空格</span><br><span class="line">select replace(replace(content_title,&#x27; &#x27;,&#x27;&#x27;),&#x27;\r\n&#x27;,&#x27;&#x27;) from content_delivery_offsite_detail_douyin cdodd </span><br><span class="line"></span><br><span class="line"># mysql 修改字段名称</span><br><span class="line">ALTER TABLE 表名 CHANGE [column] 旧字段名 新字段名 新数据类型;</span><br><span class="line"></span><br><span class="line"># mysql 新增字段名称</span><br><span class="line">alter table midea.product_delist_original_bom_cost_detail add 上年年末冻本 double after `930冻本`;</span><br><span class="line"></span><br><span class="line"># mysql select删除不需要的字段</span><br><span class="line">select concat(&#x27;select &#x27;,group_concat(case when column_name=&#x27;col&#x27; then null else column_name end),&#x27; from table;&#x27;) from information_schema.columns where table_schema=&#x27;db&#x27; and table_name=&#x27;table&#x27;;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/05/30/MySQL%E6%95%B0%E6%8D%AE%E5%A4%84%E7%90%86/" data-id="cl3s8s6zu0000vcsqh6da8avw" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-技术知识管理" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/11/%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" class="article-date">
-  <time datetime="2022-04-11T06:09:56.000Z" itemprop="datePublished">2022-04-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/11/%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/">技术知识管理</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install pandas </span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/11/%E6%8A%80%E6%9C%AF%E7%9F%A5%E8%AF%86%E7%AE%A1%E7%90%86/" data-id="cl24nzf3l0000nwsqhlmxfap9" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-Java-Scala/" rel="tag">python | Java | Scala</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-article-title" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/11/article-title/" class="article-date">
-  <time datetime="2022-04-11T02:52:48.000Z" itemprop="datePublished">2022-04-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/11/article-title/">我的第一篇知识管理博客</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">python 知识学习</span><br><span class="line"><span class="number">1.</span> python 函数</span><br><span class="line"><span class="number">1.1</span> datetime 模块</span><br><span class="line"></span><br><span class="line"><span class="number">1.2</span> pandas 模块</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/11/article-title/" data-id="cl1u4k78b0000kssqfi0gctga" class="article-share-link">Share</a>
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/python-%E5%87%BD%E6%95%B0-%E7%BC%96%E7%A8%8B/" rel="tag">python | 函数 | 编程</a></li></ul>
-
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/04/11/hello-world/" class="article-date">
-  <time datetime="2022-04-11T01:52:36.214Z" itemprop="datePublished">2022-04-11</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/04/11/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/04/11/hello-world/" data-id="cl1u2c48l0000kksqbfot7851" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
 
 </section>
         
